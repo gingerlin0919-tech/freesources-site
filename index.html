@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="zh-TW" class="scroll-smooth">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="logo.png">
-  <title>職感菁英學院 ｜ 菁英專屬免費資源與職涯複利加速器</title>
-  <meta name="description" content="職感菁英學院為高階幕僚、企業主管與成長型人才打造的五大免費資源：不行動成本計算機、幕僚觀察電子報、職涯複利讀書會、影音播客與企業商業合作通道。">
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
-  <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide@0.454.0/dist/umd/lucide.min.js"></script>
-  <!-- Google Fonts: 繁體中文與經典襯線英文字型 -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Noto+Serif+TC:wght@600;700;900&family=Noto+Sans+TC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 
-  <script>
+<html class="scroll-smooth" lang="zh-TW">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="logo.png" rel="icon"/>
+<title>職感菁英學院 ｜ 菁英專屬免費資源與職涯複利加速器</title>
+<meta content="職感菁英學院為高階幕僚、企業主管與成長型人才打造的五大免費資源：不行動成本計算機、幕僚觀察電子報、職涯複利讀書會、影音播客與企業商業合作通道。" name="description"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<!-- Lucide Icons -->
+<script src="https://unpkg.com/lucide@0.454.0/dist/umd/lucide.min.js"></script>
+<!-- Google Fonts: 繁體中文與經典襯線英文字型 -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&amp;family=Noto+Serif+TC:wght@600;700;900&amp;family=Noto+Sans+TC:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<script>
     tailwind.config = {
       theme: {
         extend: {
@@ -40,8 +40,7 @@
       }
     }
   </script>
-
-  <style>
+<style>
     body {
       font-family: 'Noto Sans TC', sans-serif;
       background-color: #070709;
@@ -64,549 +63,491 @@
       accent-color: #E6CA75;
     }
   </style>
+<style id="mobile-typo">
+h1,h2,h3,h4,blockquote,summary{text-wrap:balance}
+p,li,td,th,figcaption,label,dd{text-wrap:pretty}
+.ph{display:inline-block}
+@media (max-width:640px){
+  h1{font-size:26px !important; line-height:1.45 !important}
+  h2{font-size:22px !important; line-height:1.5 !important}
+  h3{font-size:18px !important; line-height:1.5 !important}
+}
+
+</style>
 </head>
 <body class="selection:bg-[#D4AF37] selection:text-black">
-
-  <!-- 頂部浮動導覽列 -->
-  <nav class="fixed top-0 left-0 right-0 z-50 bg-[#070709]/92 backdrop-blur-md border-b border-[#24242C] py-3.5 px-4 sm:px-8">
-    <div class="max-w-6xl mx-auto flex items-center justify-between">
-      <div class="flex items-center gap-3">
-        <img src="logo.png" alt="職感菁英學院" class="h-9 w-9 object-contain drop-shadow-[0_0_8px_rgba(212,175,55,0.45)]">
-        <div>
-          <span class="font-serif font-black tracking-wider gold-gradient-text text-base sm:text-lg">職感菁英學院</span>
-          <span class="hidden sm:inline-block text-[11px] gold-gradient-text ml-2 font-mono tracking-widest">THE ELITE ACADEMY</span>
-        </div>
-      </div>
-      <div class="flex items-center gap-2 sm:gap-4">
-        <a href="#calculator" class="hidden md:inline-block text-xs font-semibold text-zinc-300 hover:text-[#E6CA75] transition">成本計算機</a>
-        <a href="#resources" class="hidden md:inline-block text-xs font-semibold text-zinc-300 hover:text-[#E6CA75] transition">五大資源</a>
-        <a href="#business" class="hidden md:inline-block text-xs font-semibold text-[#E6CA75] hover:text-white transition">資產升級綠色通道</a>
-        <a href="https://book.elites888.com/" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full btn-gold font-black text-xs shadow-md transition transform hover:scale-105">
-          <i data-lucide="book" class="w-3.5 h-3.5"></i>
-          <span>《把資歷變資產》新書</span>
-        </a>
-      </div>
-    </div>
-  </nav>
-
-  <!-- 首屏英雄視覺區 -->
-  <header class="pt-28 pb-14 sm:pt-36 sm:pb-20 px-4 sm:px-8 relative overflow-hidden bg-gradient-to-b from-[#070709] via-[#0F0F14] to-[#070709] text-center">
-    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-[#D4AF37]/8 blur-[160px] pointer-events-none rounded-full"></div>
-
-    <div class="max-w-4xl mx-auto space-y-6 relative z-10">
-      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#16161D] text-[#E6CA75] border border-[#D4AF37]/35 text-xs sm:text-sm font-semibold tracking-wide">
-        <i data-lucide="sparkles" class="w-4 h-4 text-[#E6CA75]"></i>
-        <span>ELITE RESOURCES ｜ 菁英專屬免費資源</span>
-      </div>
-
-      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black font-serif tracking-tight leading-tight">
-        <span class="block text-zinc-100">從「累積資歷」到「配置資產」</span>
-        <span class="gold-gradient-text block mt-1">開啟你的職涯複利加速器</span>
-      </h1>
-
-      <p class="text-zinc-300 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
-        在走向資產的路上，你不必單打獨鬥。職感菁英學院由 <strong class="text-[#E6CA75]">20 年大型集團經營層幕僚 Ginger Lin</strong> 創立，精選五大高價值免費資源與實踐工具，協助你跳脫無效工時，構建抗跌且具備複利效應的個人與組織資產。
-      </p>
-
-      <!-- 快捷錨點 -->
-      <div class="pt-2 flex flex-wrap items-center justify-center gap-3 text-xs sm:text-sm">
-        <a href="#calculator" class="px-5 py-2.5 rounded-xl bg-[#161620] border border-[#D4AF37]/40 text-[#E6CA75] hover:bg-[#20202C] transition flex items-center gap-2">
-          <i data-lucide="calculator" class="w-4 h-4"></i>
-          <span>不行動的成本計算機</span>
-        </a>
-        <a href="#newsletter" class="px-5 py-2.5 rounded-xl bg-[#161620] border border-zinc-700 hover:border-[#D4AF37]/40 text-zinc-200 transition flex items-center gap-2">
-          <i data-lucide="mail" class="w-4 h-4 text-[#E6CA75]"></i>
-          <span>幕僚觀察電子報</span>
-        </a>
-        <a href="#skool" class="px-5 py-2.5 rounded-xl bg-[#161620] border border-zinc-700 hover:border-[#D4AF37]/40 text-zinc-200 transition flex items-center gap-2">
-          <i data-lucide="lock" class="w-4 h-4 text-[#E6CA75]"></i>
-          <span>職涯複利讀書會</span>
-        </a>
-        <a href="#business" class="px-5 py-2.5 rounded-xl bg-[#221B0A] border border-[#D4AF37]/60 text-[#E6CA75] hover:bg-[#2F240E] transition flex items-center gap-2 font-bold">
-          <i data-lucide="briefcase" class="w-4 h-4"></i>
-          <span>資產升級綠色通道</span>
-        </a>
-      </div>
-    </div>
-  </header>
-
-  <!-- 模組 1：不行動的成本計算機（互動式體驗） -->
-  <section id="calculator" class="py-16 sm:py-24 px-4 sm:px-8 bg-[#0B0B0E] border-y border-[#22222B] relative">
-    <div class="max-w-5xl mx-auto space-y-10">
-      
-      <!-- 區塊標題與對象/效益 -->
-      <div class="text-center space-y-3">
-        <h2 class="text-3xl sm:text-4xl font-serif font-black text-white">
-          【不行動的成本計算機】<br>
-          <span class="gold-gradient-text">算一算：維持現狀，你正在為「沒有改變」付出多少代價？</span>
-        </h2>
-      </div>
-
-      <!-- 對象與效益說明卡 -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
-        <div class="p-4 rounded-xl bg-[#141419] border border-zinc-800 flex items-start gap-3">
-          <div class="p-2 rounded-lg bg-[#D4AF37]/15 text-[#E6CA75] shrink-0 mt-0.5">
-            <i data-lucide="target" class="w-4 h-4"></i>
-          </div>
-          <div>
-            <h4 class="text-xs font-bold text-zinc-400 font-mono tracking-wider">適合對象</h4>
-            <p class="text-sm font-semibold text-zinc-200 mt-0.5">企業中高階主管、面臨轉型瓶頸的自雇者與專業人士。</p>
-          </div>
-        </div>
-        <div class="p-4 rounded-xl bg-[#141419] border border-zinc-800 flex items-start gap-3">
-          <div class="p-2 rounded-lg bg-[#D4AF37]/15 text-[#E6CA75] shrink-0 mt-0.5">
-            <i data-lucide="gift" class="w-4 h-4"></i>
-          </div>
-          <div>
-            <h4 class="text-xs font-bold text-zinc-400 font-mono tracking-wider">專屬 BENEFIT</h4>
-            <p class="text-sm font-semibold text-zinc-200 mt-0.5">30 秒量化決策盲點，精準算出未來 3 年若未啟動資產轉化，所損失的潛在市場溢價與無效工時代價。</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- 互動計算機主體 (Grid 兩欄) -->
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start max-w-5xl mx-auto">
-        
-        <!-- 左側：輸入控制面板 -->
-        <div class="lg:col-span-6 p-6 sm:p-8 rounded-2xl bg-[#121217] border border-[#D4AF37]/35 shadow-xl space-y-6">
-          <h3 class="text-lg font-bold font-serif text-white flex items-center gap-2">
-            <i data-lucide="sliders" class="w-5 h-5 text-[#E6CA75]"></i>
-            <span>請輸入您的職涯基本參數</span>
-          </h3>
-
-          <!-- 參數 1: 目前月薪 -->
-          <div class="space-y-2">
-            <div class="flex justify-between items-center text-sm">
-              <span class="text-zinc-300 font-medium">目前平均月薪（NTD）：</span>
-              <span id="salary-val" class="font-mono text-base font-bold text-[#E6CA75]">$70,000 元</span>
-            </div>
-            <input type="range" id="input-salary" min="30000" max="250000" step="5000" value="70000" class="w-full h-2 bg-zinc-800 rounded-lg cursor-pointer">
-            <div class="flex justify-between text-[11px] text-zinc-500 font-mono">
-              <span>3 萬</span>
-              <span>10 萬</span>
-              <span>25 萬以上</span>
-            </div>
-          </div>
-
-          <!-- 參數 2: 累計年資 -->
-          <div class="space-y-2">
-            <div class="flex justify-between items-center text-sm">
-              <span class="text-zinc-300 font-medium">職場累計工作年資：</span>
-              <span id="years-val" class="font-mono text-base font-bold text-[#E6CA75]">8 年</span>
-            </div>
-            <input type="range" id="input-years" min="1" max="25" step="1" value="8" class="w-full h-2 bg-zinc-800 rounded-lg cursor-pointer">
-            <div class="flex justify-between text-[11px] text-zinc-500 font-mono">
-              <span>1 年 (新手)</span>
-              <span>10 年 (中堅)</span>
-              <span>25 年 (資深)</span>
-            </div>
-          </div>
-
-          <!-- 參數 3: 耗費在非累積性事務的比例 -->
-          <div class="space-y-2">
-            <div class="flex justify-between items-center text-sm">
-              <span class="text-zinc-300 font-medium">每週耗費在「重複性、缺乏累積性雜務」的工時：</span>
-              <span id="waste-val" class="font-mono text-base font-bold text-[#E6CA75]">40%</span>
-            </div>
-            <input type="range" id="input-waste" min="10" max="80" step="5" value="40" class="w-full h-2 bg-zinc-800 rounded-lg cursor-pointer">
-            <div class="flex justify-between text-[11px] text-zinc-500 font-mono">
-              <span>10% (極專注)</span>
-              <span>40% (常見瓶頸)</span>
-              <span>80% (嚴重瞎忙)</span>
-            </div>
-          </div>
-
-          <!-- 參數 4: 是否已佈局第二資產曲線 -->
-          <div class="pt-2 border-t border-zinc-800">
-            <label class="flex items-center gap-3 cursor-pointer">
-              <input type="checkbox" id="input-second-curve" class="w-4 h-4 rounded bg-zinc-900 border-zinc-700 text-[#D4AF37] focus:ring-0">
-              <span class="text-xs text-zinc-300">我目前<strong>尚未建立</strong>正職以外的「第二資產複利曲線」</span>
-            </label>
-          </div>
-        </div>
-
-        <!-- 右側：即時震撼運算報告 -->
-        <div class="lg:col-span-6 p-6 sm:p-8 rounded-2xl bg-gradient-to-b from-[#181822] via-[#121217] to-[#0A0A0D] border-2 border-[#D4AF37]/50 shadow-2xl space-y-6">
-          <div class="flex items-center justify-between border-b border-zinc-800 pb-3">
-            <span class="text-xs font-mono uppercase tracking-widest text-[#E6CA75] font-bold">ANALYSIS REPORT</span>
-            <span class="text-[11px] px-2.5 py-0.5 rounded-full bg-rose-500/20 text-rose-300 border border-rose-500/30 font-semibold">🚨 現狀維持代價警訊</span>
-          </div>
-
-          <!-- 核心指標 1: 錯失的職涯複利潛在價值 -->
-          <div class="space-y-1.5">
-            <p class="text-xs text-zinc-400">未來 3 年若維持現狀，錯失的「職涯複利潛在資產價值」：</p>
-            <div id="cost-compound" class="text-3xl sm:text-4xl font-serif font-black gold-gradient-text tracking-tight">
+<!-- 頂部浮動導覽列 -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-[#070709]/92 backdrop-blur-md border-b border-[#24242C] py-3.5 px-4 sm:px-8">
+<div class="max-w-6xl mx-auto flex items-center justify-between">
+<div class="flex items-center gap-3">
+<img alt="職感菁英學院" class="h-9 w-9 object-contain drop-shadow-[0_0_8px_rgba(212,175,55,0.45)]" src="logo.png"/>
+<div>
+<span class="font-serif font-black tracking-wider gold-gradient-text text-base sm:text-lg"><span class="phw"><span class="ph">職感菁英學院</span></span></span>
+<span class="hidden sm:inline-block text-[11px] gold-gradient-text ml-2 font-mono tracking-widest">THE ELITE ACADEMY</span>
+</div>
+</div>
+<div class="flex items-center gap-2 sm:gap-4">
+<a class="hidden md:inline-block text-xs font-semibold text-zinc-300 hover:text-[#E6CA75] transition" href="#calculator"><span class="phw"><span class="ph">成本計算機</span></span></a>
+<a class="hidden md:inline-block text-xs font-semibold text-zinc-300 hover:text-[#E6CA75] transition" href="#resources"><span class="phw"><span class="ph">五大資源</span></span></a>
+<a class="hidden md:inline-block text-xs font-semibold text-[#E6CA75] hover:text-white transition" href="#business"><span class="phw"><span class="ph">資產升級綠色通道</span></span></a>
+<a class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full btn-gold font-black text-xs shadow-md transition transform hover:scale-105" href="https://book.elites888.com/">
+<i class="w-3.5 h-3.5" data-lucide="book"></i>
+<span><span class="phw"><span class="ph">《把資歷變資產》新書</span></span></span>
+</a>
+</div>
+</div>
+</nav>
+<!-- 首屏英雄視覺區 -->
+<header class="pt-28 pb-14 sm:pt-36 sm:pb-20 px-4 sm:px-8 relative overflow-hidden bg-gradient-to-b from-[#070709] via-[#0F0F14] to-[#070709] text-center">
+<div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-[#D4AF37]/8 blur-[160px] pointer-events-none rounded-full"></div>
+<div class="max-w-4xl mx-auto space-y-6 relative z-10">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#16161D] text-[#E6CA75] border border-[#D4AF37]/35 text-xs sm:text-sm font-semibold tracking-wide">
+<i class="w-4 h-4 text-[#E6CA75]" data-lucide="sparkles"></i>
+<span><span class="phw"><span class="ph">ELITE RESOURCES</span> <span class="ph">｜ 菁英專屬免費資源</span></span></span>
+</div>
+<h1 class="text-3xl sm:text-5xl lg:text-6xl font-black font-serif tracking-tight leading-tight">
+<span class="block text-zinc-100"><span class="phw"><span class="ph">從「累積資歷」到</span><span class="ph">「配置資產」</span></span></span>
+<span class="gold-gradient-text block mt-1"><span class="phw"><span class="ph">開啟你的職涯複利加速器</span></span></span>
+</h1>
+<p class="text-zinc-300 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
+        在走向資產的路上，你不必單打獨鬥。職感菁英學院由 <strong class="text-[#E6CA75]">20 年大型集團經營層幕僚 Ginger Lin</strong><span class="phw"> 創立，精選五大高價值免費資源與實踐工具，協助你跳脫無效工時，構建抗跌且具備複利效應的個人與<span class="ph">組織資產。</span>
+      </span></p>
+<!-- 快捷錨點 -->
+<div class="pt-2 flex flex-wrap items-center justify-center gap-3 text-xs sm:text-sm">
+<a class="px-5 py-2.5 rounded-xl bg-[#161620] border border-[#D4AF37]/40 text-[#E6CA75] hover:bg-[#20202C] transition flex items-center gap-2" href="#calculator">
+<i class="w-4 h-4" data-lucide="calculator"></i>
+<span><span class="phw"><span class="ph">不行動的成本計算機</span></span></span>
+</a>
+<a class="px-5 py-2.5 rounded-xl bg-[#161620] border border-zinc-700 hover:border-[#D4AF37]/40 text-zinc-200 transition flex items-center gap-2" href="#newsletter">
+<i class="w-4 h-4 text-[#E6CA75]" data-lucide="mail"></i>
+<span><span class="phw"><span class="ph">幕僚觀察電子報</span></span></span>
+</a>
+<a class="px-5 py-2.5 rounded-xl bg-[#161620] border border-zinc-700 hover:border-[#D4AF37]/40 text-zinc-200 transition flex items-center gap-2" href="#skool">
+<i class="w-4 h-4 text-[#E6CA75]" data-lucide="lock"></i>
+<span><span class="phw"><span class="ph">職涯複利讀書會</span></span></span>
+</a>
+<a class="px-5 py-2.5 rounded-xl bg-[#221B0A] border border-[#D4AF37]/60 text-[#E6CA75] hover:bg-[#2F240E] transition flex items-center gap-2 font-bold" href="#business">
+<i class="w-4 h-4" data-lucide="briefcase"></i>
+<span><span class="phw"><span class="ph">資產升級綠色通道</span></span></span>
+</a>
+</div>
+</div>
+</header>
+<!-- 模組 1：不行動的成本計算機（互動式體驗） -->
+<section class="py-16 sm:py-24 px-4 sm:px-8 bg-[#0B0B0E] border-y border-[#22222B] relative" id="calculator">
+<div class="max-w-5xl mx-auto space-y-10">
+<!-- 區塊標題與對象/效益 -->
+<div class="text-center space-y-3">
+<h2 class="text-3xl sm:text-4xl font-serif font-black text-white"><span class="phw">
+          <span class="ph">【不行動的成本計算機】</span></span><br/>
+<span class="gold-gradient-text"><span class="phw"><span class="ph">算一算：</span><span class="ph">維持現狀，</span><span class="ph">你正在為</span><span class="ph">「沒有改變」付出多少代價？</span></span></span>
+</h2>
+</div>
+<!-- 對象與效益說明卡 -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
+<div class="p-4 rounded-xl bg-[#141419] border border-zinc-800 flex items-start gap-3">
+<div class="p-2 rounded-lg bg-[#D4AF37]/15 text-[#E6CA75] shrink-0 mt-0.5">
+<i class="w-4 h-4" data-lucide="target"></i>
+</div>
+<div>
+<h4 class="text-xs font-bold text-zinc-400 font-mono tracking-wider"><span class="phw"><span class="ph">適合對象</span></span></h4>
+<p class="text-sm font-semibold text-zinc-200 mt-0.5"><span class="phw"><span class="ph">企業中高階主管、</span><span class="ph">面臨轉型瓶頸的自雇者與專業人士。</span></span></p>
+</div>
+</div>
+<div class="p-4 rounded-xl bg-[#141419] border border-zinc-800 flex items-start gap-3">
+<div class="p-2 rounded-lg bg-[#D4AF37]/15 text-[#E6CA75] shrink-0 mt-0.5">
+<i class="w-4 h-4" data-lucide="gift"></i>
+</div>
+<div>
+<h4 class="text-xs font-bold text-zinc-400 font-mono tracking-wider"><span class="phw"><span class="ph">專屬 BENEFIT</span></span></h4>
+<p class="text-sm font-semibold text-zinc-200 mt-0.5"><span class="phw"><span class="ph">30 秒量化決策盲點，</span>精準算出未來 3 年若未啟動資產轉化，<span class="ph">所損失的潛在市場溢價與無效工時代價。</span></span></p>
+</div>
+</div>
+</div>
+<!-- 互動計算機主體 (Grid 兩欄) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start max-w-5xl mx-auto">
+<!-- 左側：輸入控制面板 -->
+<div class="lg:col-span-6 p-6 sm:p-8 rounded-2xl bg-[#121217] border border-[#D4AF37]/35 shadow-xl space-y-6">
+<h3 class="text-lg font-bold font-serif text-white flex items-center gap-2">
+<i class="w-5 h-5 text-[#E6CA75]" data-lucide="sliders"></i>
+<span><span class="phw"><span class="ph">請輸入您的職涯基本參數</span></span></span>
+</h3>
+<!-- 參數 1: 目前月薪 -->
+<div class="space-y-2">
+<div class="flex justify-between items-center text-sm">
+<span class="text-zinc-300 font-medium"><span class="phw"><span class="ph">目前平均月薪（NTD）：</span></span></span>
+<span class="font-mono text-base font-bold text-[#E6CA75]" id="salary-val"><span class="phw"><span class="ph">$70,000 元</span></span></span>
+</div>
+<input class="w-full h-2 bg-zinc-800 rounded-lg cursor-pointer" id="input-salary" max="250000" min="30000" step="5000" type="range" value="70000"/>
+<div class="flex justify-between text-[11px] text-zinc-500 font-mono">
+<span>3 萬</span>
+<span><span class="phw"><span class="ph">10 萬</span></span></span>
+<span><span class="phw"><span class="ph">25 萬以上</span></span></span>
+</div>
+</div>
+<!-- 參數 2: 累計年資 -->
+<div class="space-y-2">
+<div class="flex justify-between items-center text-sm">
+<span class="text-zinc-300 font-medium"><span class="phw"><span class="ph">職場累計工作年資：</span></span></span>
+<span class="font-mono text-base font-bold text-[#E6CA75]" id="years-val">8 年</span>
+</div>
+<input class="w-full h-2 bg-zinc-800 rounded-lg cursor-pointer" id="input-years" max="25" min="1" step="1" type="range" value="8"/>
+<div class="flex justify-between text-[11px] text-zinc-500 font-mono">
+<span><span class="phw"><span class="ph">1 年 (新手)</span></span></span>
+<span><span class="phw"><span class="ph">10 年 (中堅)</span></span></span>
+<span><span class="phw"><span class="ph">25 年 (資深)</span></span></span>
+</div>
+</div>
+<!-- 參數 3: 耗費在非累積性事務的比例 -->
+<div class="space-y-2">
+<div class="flex justify-between items-center text-sm">
+<span class="text-zinc-300 font-medium"><span class="phw"><span class="ph">每週耗費在</span><span class="ph">「重複性、缺乏累積性雜務」的工時：</span></span></span>
+<span class="font-mono text-base font-bold text-[#E6CA75]" id="waste-val">40%</span>
+</div>
+<input class="w-full h-2 bg-zinc-800 rounded-lg cursor-pointer" id="input-waste" max="80" min="10" step="5" type="range" value="40"/>
+<div class="flex justify-between text-[11px] text-zinc-500 font-mono">
+<span><span class="phw"><span class="ph">10% (極專注)</span></span></span>
+<span><span class="phw"><span class="ph">40% (常見瓶頸)</span></span></span>
+<span><span class="phw"><span class="ph">80% (嚴重瞎忙)</span></span></span>
+</div>
+</div>
+<!-- 參數 4: 是否已佈局第二資產曲線 -->
+<div class="pt-2 border-t border-zinc-800">
+<label class="flex items-center gap-3 cursor-pointer">
+<input class="w-4 h-4 rounded bg-zinc-900 border-zinc-700 text-[#D4AF37] focus:ring-0" id="input-second-curve" type="checkbox"/>
+<span class="text-xs text-zinc-300">我目前<strong><span class="phw"><span class="ph">尚未建立</span></span></strong><span class="phw"><span class="ph">正職以外的</span><span class="ph">「第二資產複利曲線」</span></span></span>
+</label>
+</div>
+</div>
+<!-- 右側：即時震撼運算報告 -->
+<div class="lg:col-span-6 p-6 sm:p-8 rounded-2xl bg-gradient-to-b from-[#181822] via-[#121217] to-[#0A0A0D] border-2 border-[#D4AF37]/50 shadow-2xl space-y-6">
+<div class="flex items-center justify-between border-b border-zinc-800 pb-3">
+<span class="text-xs font-mono uppercase tracking-widest text-[#E6CA75] font-bold">ANALYSIS REPORT</span>
+<span class="text-[11px] px-2.5 py-0.5 rounded-full bg-rose-500/20 text-rose-300 border border-rose-500/30 font-semibold"><span class="phw"><span class="ph">🚨 現狀維持代價警訊</span></span></span>
+</div>
+<!-- 核心指標 1: 錯失的職涯複利潛在價值 -->
+<div class="space-y-1.5">
+<p class="text-xs text-zinc-400"><span class="phw"><span class="ph">未來 3 年若維持現狀，</span><span class="ph">錯失的</span><span class="ph">「職涯複利潛在資產價值」：</span></span></p>
+<div class="text-3xl sm:text-4xl font-serif font-black gold-gradient-text tracking-tight" id="cost-compound">
               NT$ 3,465,000
             </div>
-            <!-- 動態換算扎心副標：年均與月均雙重暴擊 -->
-            <div class="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-rose-300 font-medium pt-0.5">
-              <span class="inline-flex items-center gap-1">📉 相當於每年蒸發 <strong id="cost-annual" class="font-mono text-[#E6CA75] font-bold text-sm">NT$ 1,155,000</strong></span>
-              <span class="text-zinc-600 hidden sm:inline">｜</span>
-              <span>每月少賺 <strong id="cost-monthly" class="font-mono text-rose-400 font-bold text-sm">NT$ 96,250</strong></span>
-            </div>
-            <p class="text-[11px] text-zinc-500 pt-0.5">※ 依據 G.A.M.E. 複利模型，包含未釋放的市場溢價、方法論資產化收益與潛在晉升/顧問溢酬。</p>
-          </div>
-
-          <!-- 核心指標 2: 被吞噬的無效工時 -->
-          <div class="p-4 rounded-xl bg-[#141419] border border-zinc-800 grid grid-cols-2 gap-4">
-            <div>
-              <p class="text-[11px] text-zinc-400">3 年被消耗的無效工時：</p>
-              <p id="cost-hours" class="text-xl font-bold font-mono text-zinc-100 mt-0.5">2,496 小時</p>
-            </div>
-            <div>
-              <p class="text-[11px] text-zinc-400">相當於平白浪費：</p>
-              <p id="cost-months" class="text-xl font-bold font-mono text-rose-400 mt-0.5">14.4 個月</p>
-            </div>
-          </div>
-
-          <!-- 立即行動按鈕 -->
-          <div class="pt-2">
-            <a href="#resources" class="w-full py-3.5 rounded-xl btn-gold font-black text-sm text-center flex items-center justify-center gap-2 shadow-lg transition">
-              <i data-lucide="arrow-down" class="w-4 h-4"></i>
-              <span>立即挑選適合您的免費加速資源</span>
-            </a>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- 模組 2-5：四大免費學習資源矩陣 -->
-  <section id="resources" class="py-16 sm:py-24 px-4 sm:px-8 bg-[#070709] relative">
-    <div class="max-w-5xl mx-auto space-y-12">
-      
-      <div class="text-center space-y-3">
-        <span class="text-xs uppercase font-mono tracking-widest text-[#E6CA75] font-bold">CURATED RESOURCES</span>
-        <h2 class="text-3xl sm:text-4xl font-serif font-black text-white">
-          職感菁英學院 ｜ <span class="gold-gradient-text">四大高價值成長資源</span>
-        </h2>
-        <p class="text-zinc-400 text-sm sm:text-base max-w-xl mx-auto">
-          每個資源皆由 Ginger 親自規劃，針對不同學習情境與階段目標，為您提供最清晰的價值躍遷路徑。
-        </p>
-      </div>
-
-      <!-- 四大資源卡片 Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
-        
-        <!-- 資源 A：電子報 (名單與 AI 指令) -->
-        <div id="newsletter" class="rounded-2xl p-7 bg-[#121217] border border-[#D4AF37]/35 hover:border-[#D4AF37]/80 transition flex flex-col justify-between space-y-6 shadow-xl relative group">
-          <div class="space-y-4">
-            <div class="flex items-center justify-between">
-              <span class="px-3 py-1 rounded-full bg-[#181822] text-[#E6CA75] text-xs font-bold border border-[#D4AF37]/30 flex items-center gap-1.5">
-                <i data-lucide="mail" class="w-3.5 h-3.5"></i>
-                <span>每月中旬出刊 ｜ 免費訂閱</span>
-              </span>
-              <span class="text-[11px] text-zinc-500 font-mono">OWNED MEDIA</span>
-            </div>
-
-            <h3 class="text-2xl font-serif font-black text-white">
-              【每月幕僚觀察電子報】<br>
-              <span class="gold-gradient-text text-lg">加碼贈《職涯資產健檢 AI 提詞指令》</span>
-            </h3>
-
-            <!-- 適合對象 -->
-            <div class="p-3.5 rounded-xl bg-[#171720] border border-zinc-800 space-y-1">
-              <span class="text-[11px] font-bold text-[#E6CA75] font-mono tracking-wider">🎯 適合對象</span>
-              <p class="text-xs text-zinc-300">渴望站在「老闆視角與經營者格局」思考的主管、核心專案負責人、企劃幕僚。</p>
-            </div>
-
-            <!-- 專屬 BENEFIT -->
-            <div class="p-3.5 rounded-xl bg-[#171720] border border-zinc-800 space-y-1">
-              <span class="text-[11px] font-bold text-[#E6CA75] font-mono tracking-wider">💎 專屬 BENEFIT</span>
-              <p class="text-xs text-zinc-300">
-                每月分享20 年大型集團經營層第一線資源配置觀念；免費獲得獨家 AI 提詞指令，輔助盤點個人籌碼。
-              </p>
-            </div>
-          </div>
-
-          <div class="pt-2">
-            <a href="https://the-socialite-academy.kit.com/7b8ae564bd" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-xl btn-gold font-black text-sm text-center flex items-center justify-center gap-2 shadow-md transition transform hover:scale-[1.02]">
-              <i data-lucide="sparkles" class="w-4 h-4"></i>
-              <span>免費訂閱 ＆ 領取 AI 健檢指令</span>
-            </a>
-          </div>
-        </div>
-
-        <!-- 資源 B：Skool 讀書會 (高門檻共學圈) -->
-        <div id="skool" class="rounded-2xl p-7 bg-gradient-to-b from-[#181822] via-[#13131A] to-[#0E0E12] border-2 border-[#D4AF37] flex flex-col justify-between space-y-6 shadow-2xl relative group">
-          
-          <div class="space-y-4">
-            <div class="flex items-center justify-between">
-              <span class="px-3 py-1 rounded-full bg-amber-400/20 text-[#E6CA75] text-xs font-black border border-[#D4AF37]/50 flex items-center gap-1.5">
-                <i data-lucide="lock" class="w-3.5 h-3.5"></i>
-                <span>限購書讀者與電子報訂閱者</span>
-              </span>
-              <span class="text-[11px] text-zinc-400 font-mono">VIP COMMUNITY</span>
-            </div>
-
-            <h3 class="text-2xl font-serif font-black text-white">
-              【職涯複利讀書會】<br>
-              <span class="gold-gradient-text text-lg">資產升級共學圈</span>
-            </h3>
-
-            <!-- 適合對象 -->
-            <div class="p-3.5 rounded-xl bg-[#171720] border border-zinc-800 space-y-1">
-              <span class="text-[11px] font-bold text-[#E6CA75] font-mono tracking-wider">🎯 適合對象</span>
-              <p class="text-xs text-zinc-300">
-                持有《把資歷變資產》新書讀者（需附購書憑證）與電子報訂閱者。
-              </p>
-            </div>
-
-            <!-- 專屬 BENEFIT -->
-            <div class="p-3.5 rounded-xl bg-[#171720] border border-zinc-800 space-y-1">
-              <span class="text-[11px] font-bold text-[#E6CA75] font-mono tracking-wider">💎 專屬 BENEFIT</span>
-              <p class="text-xs text-zinc-300">
-                全書 7 大職涯資產練習線上深度拆解；過濾雜訊的高品質高階幕僚人脈圈；享有"限額"線上交流與跨界合作孵化資格。
-              </p>
-            </div>
-          </div>
-
-          <div class="pt-2">
-            <a href="https://www.skool.com/the-socialite-academy-6806/about" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-xl btn-gold font-black text-sm text-center flex items-center justify-center gap-2 shadow-md transition transform hover:scale-[1.02]">
-              <i data-lucide="shield-check" class="w-4 h-4"></i>
-              <span>填寫通關審核題 ｜ 申請加入共學圈</span>
-            </a>
-          </div>
-        </div>
-
-        <!-- 資源 C：YouTube 官方頻道 -->
-        <div class="rounded-2xl p-7 bg-[#121217] border border-[#D4AF37]/35 hover:border-[#D4AF37]/80 transition flex flex-col justify-between space-y-6 shadow-xl relative group">
-          <div class="space-y-4">
-            <div class="flex items-center justify-between">
-              <span class="px-3 py-1 rounded-full bg-[#181822] text-[#E6CA75] text-xs font-bold border border-[#D4AF37]/30 flex items-center gap-1.5">
-                <i data-lucide="video" class="w-3.5 h-3.5 text-rose-400"></i>
-                <span>影音解說 ｜ 隨選隨學</span>
-              </span>
-              <span class="text-[11px] text-zinc-500 font-mono">YOUTUBE</span>
-            </div>
-
-            <h3 class="text-2xl font-serif font-black text-white">
-              【Ginger Lin 官方影音頻道】<br>
-              <span class="gold-gradient-text text-lg">動態視覺 × 實戰分享</span>
-            </h3>
-
-            <!-- 適合對象 -->
-            <div class="p-3.5 rounded-xl bg-[#171720] border border-zinc-800 space-y-1">
-              <span class="text-[11px] font-bold text-[#E6CA75] font-mono tracking-wider">🎯 適合對象</span>
-              <p class="text-xs text-zinc-300">習慣視覺化學習、希望利用零碎時間，快速吸收商業決策概念的現代工作者。</p>
-            </div>
-
-            <!-- 專屬 BENEFIT -->
-            <div class="p-3.5 rounded-xl bg-[#171720] border border-zinc-800 space-y-1">
-              <span class="text-[11px] font-bold text-[#E6CA75] font-mono tracking-wider">💎 專屬 BENEFIT</span>
-              <p class="text-xs text-zinc-300">
-                看見訪談來賓真實神態與互動火花；搭配視覺圖解與重點字卡，提升結構化吸收效率；可不限時間重複觀看與團隊研討。
-              </p>
-            </div>
-          </div>
-
-          <div class="pt-2">
-            <a href="https://www.youtube.com/@gingerlin8568" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 px-4 rounded-xl bg-[#181822] hover:bg-[#222230] border border-[#D4AF37]/40 hover:border-[#D4AF37] text-white font-bold text-sm flex items-center justify-center gap-2 transition">
-              <i data-lucide="play-circle" class="w-4 h-4 text-[#E6CA75]"></i>
-              <span>前往 YouTube 訂閱精華頻道</span>
-            </a>
-          </div>
-        </div>
-
-        <!-- 資源 D：Podcast 隨選播客 -->
-        <div class="rounded-2xl p-7 bg-[#121217] border border-[#D4AF37]/35 hover:border-[#D4AF37]/80 transition flex flex-col justify-between space-y-6 shadow-xl relative group">
-          <div class="space-y-4">
-            <div class="flex items-center justify-between">
-              <span class="px-3 py-1 rounded-full bg-[#181822] text-[#E6CA75] text-xs font-bold border border-[#D4AF37]/30 flex items-center gap-1.5">
-                <i data-lucide="mic" class="w-3.5 h-3.5 text-amber-400"></i>
-                <span>聲音陪伴 ｜ 通勤首選</span>
-              </span>
-              <span class="text-[11px] text-zinc-500 font-mono">PODCAST</span>
-            </div>
-
-            <h3 class="text-2xl font-serif font-black text-white">
-              【職感聊天室 隨身播客】<br>
-              <span class="gold-gradient-text text-lg">經營洞察 × 深度聚焦</span>
-            </h3>
-
-            <!-- 適合對象 -->
-            <div class="p-3.5 rounded-xl bg-[#171720] border border-zinc-800 space-y-1">
-              <span class="text-[11px] font-bold text-[#E6CA75] font-mono tracking-wider">🎯 適合對象</span>
-              <p class="text-xs text-zinc-300">通勤族、開車族、運動中熱愛聽音訊的菁英與工作者。</p>
-            </div>
-
-            <!-- 專屬 BENEFIT -->
-            <div class="p-3.5 rounded-xl bg-[#171720] border border-zinc-800 space-y-1">
-              <span class="text-[11px] font-bold text-[#E6CA75] font-mono tracking-wider">💎 專屬 BENEFIT</span>
-              <p class="text-xs text-zinc-300">
-                解放雙手與雙眼，通勤、開車、運動中無負擔隨行聆聽；沉浸式聲音陪伴，深度聚焦經營思維對話，把零碎工時轉化為成長複利。
-              </p>
-            </div>
-          </div>
-
-          <div class="pt-2">
-            <a href="https://open.spotify.com/show/7EKQQERlSVzEewlJ3zWlLt" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 px-4 rounded-xl bg-[#181822] hover:bg-[#222230] border border-[#D4AF37]/40 hover:border-[#D4AF37] text-white font-bold text-sm flex items-center justify-center gap-2 transition">
-              <i data-lucide="headphones" class="w-4 h-4 text-[#E6CA75]"></i>
-              <span>Spotify 免費收聽</span>
-            </a>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- 模組 6：特別設立【資產升級綠色通道】(後端兩大旗艦) -->
-  <section id="business" class="py-16 sm:py-24 px-4 sm:px-8 bg-gradient-to-b from-[#0B0B0E] to-[#040405] border-t border-[#22222B] relative">
-    <div class="max-w-5xl mx-auto space-y-12">
-      
-      <div class="text-center space-y-3">
-        <span class="text-xs uppercase font-mono tracking-widest text-[#E6CA75] font-bold">EXECUTIVE FAST TRACK</span>
-        <h2 class="text-3xl sm:text-4xl font-serif font-black text-white">
-          特別設立 ｜ <span class="gold-gradient-text">資產升級綠色通道</span>
-        </h2>
-        <p class="text-zinc-400 text-sm sm:text-base max-w-2xl mx-auto">
-          若您正在尋找企業級人財 AI 升級解方，或正計畫開拓具備全球複利效應的事業資產，歡迎透過專屬通道對接。
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
-        
-        <!-- 通道 1: 企業專屬介紹與體驗 -->
-        <div class="rounded-3xl p-8 bg-[#131318] border-2 border-zinc-800 hover:border-[#D4AF37]/70 transition flex flex-col justify-between shadow-2xl relative group">
-          <div class="space-y-5">
-            
-            <!-- 頂部身分標籤 -->
-            <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#181822] text-[#E6CA75] text-xs font-bold border border-[#D4AF37]/30">
-              <i data-lucide="building-2" class="w-3.5 h-3.5"></i>
-              <span>限 50 人以上企業主 ｜ CEO ｜ HRD ｜ 業務團隊領導</span>
-            </div>
-
-            <!-- 標題與定位 -->
-            <div>
-              <h3 class="text-2xl font-serif font-black text-white">打造持續創造價值的「資產型團隊」</h3>
-              <p class="text-xs text-[#E6CA75] mt-1 font-semibold">組織人財養成 X AI降低管理風險</p>
-            </div>
-
-            <!-- 扎心 3 大痛點框（引起強烈共鳴） -->
-            <div class="p-3.5 rounded-xl bg-[#0D0D12] border border-rose-500/25 space-y-2 text-xs">
-              <div class="flex items-center gap-2 text-rose-300 font-medium">
-                <span class="text-rose-400 font-bold text-sm leading-none">✕</span> 面試很滿意，進來卻不適任？
-              </div>
-              <div class="flex items-center gap-2 text-rose-300 font-medium">
-                <span class="text-rose-400 font-bold text-sm leading-none">✕</span> 業務第一名，升主管後，團隊業績反而掉？
-              </div>
-              <div class="flex items-center gap-2 text-rose-300 font-medium">
-                <span class="text-rose-400 font-bold text-sm leading-none">✕</span> 訓練課程結束之後，什麼都沒變？
-              </div>
-            </div>
-
-            <!-- Ginger 解方與千萬數據優勢 -->
-            <p class="text-xs sm:text-sm text-zinc-300 leading-relaxed">
-              Ginger 具備 <strong>20 年大型集團經營層幕僚經驗</strong>，並與<strong>國際高單價成交大師 Dan Lok</strong> 合作，以 <strong>40 年、超過千萬筆數據資料庫</strong> 為基底：
+<!-- 動態換算扎心副標：年均與月均雙重暴擊 -->
+<div class="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-rose-300 font-medium pt-0.5">
+<span class="inline-flex items-center gap-1">📉 相當於每年蒸發 <strong class="font-mono text-[#E6CA75] font-bold text-sm" id="cost-annual"><span class="phw"><span class="ph">NT$ 1,155,000</span></span></strong></span>
+<span class="text-zinc-600 hidden sm:inline">｜</span>
+<span><span class="phw"><span class="ph">每月少賺</span> </span><strong class="font-mono text-rose-400 font-bold text-sm" id="cost-monthly"><span class="phw"><span class="ph">NT$ 96,250</span></span></strong></span>
+</div>
+<p class="text-[11px] text-zinc-500 pt-0.5"><span class="phw">※ 依據 G.A.M.E. 複利模型，包含未釋放的市場溢價、方法論資產化收益與潛在晉升/<span class="ph">顧問溢酬。</span></span></p>
+</div>
+<!-- 核心指標 2: 被吞噬的無效工時 -->
+<div class="p-4 rounded-xl bg-[#141419] border border-zinc-800 grid grid-cols-2 gap-4">
+<div>
+<p class="text-[11px] text-zinc-400"><span class="phw">3 年被消耗的<span class="ph">無效工時：</span></span></p>
+<p class="text-xl font-bold font-mono text-zinc-100 mt-0.5" id="cost-hours">2,496 小時</p>
+</div>
+<div>
+<p class="text-[11px] text-zinc-400"><span class="phw">相當於<span class="ph">平白浪費：</span></span></p>
+<p class="text-xl font-bold font-mono text-rose-400 mt-0.5" id="cost-months">14.4 個月</p>
+</div>
+</div>
+<!-- 立即行動按鈕 -->
+<div class="pt-2">
+<a class="w-full py-3.5 rounded-xl btn-gold font-black text-sm text-center flex items-center justify-center gap-2 shadow-lg transition" href="#resources">
+<i class="w-4 h-4" data-lucide="arrow-down"></i>
+<span><span class="phw"><span class="ph">立即挑選適合您的免費加速資源</span></span></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 模組 2-5：四大免費學習資源矩陣 -->
+<section class="py-16 sm:py-24 px-4 sm:px-8 bg-[#070709] relative" id="resources">
+<div class="max-w-5xl mx-auto space-y-12">
+<div class="text-center space-y-3">
+<span class="text-xs uppercase font-mono tracking-widest text-[#E6CA75] font-bold">CURATED RESOURCES</span>
+<h2 class="text-3xl sm:text-4xl font-serif font-black text-white"><span class="phw">
+          <span class="ph">職感菁英學院 ｜</span> </span><span class="gold-gradient-text"><span class="phw"><span class="ph">四大高價值成長資源</span></span></span>
+</h2>
+<p class="text-zinc-400 text-sm sm:text-base max-w-xl mx-auto"><span class="phw">
+          每個資源皆由 Ginger 親自規劃，<span class="ph">針對不同學習情境與階段目標，</span><span class="ph">為您提供最清晰的價值躍遷路徑。</span>
+        </span></p>
+</div>
+<!-- 四大資源卡片 Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+<!-- 資源 A：電子報 (名單與 AI 指令) -->
+<div class="rounded-2xl p-7 bg-[#121217] border border-[#D4AF37]/35 hover:border-[#D4AF37]/80 transition flex flex-col justify-between space-y-6 shadow-xl relative group" id="newsletter">
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<span class="px-3 py-1 rounded-full bg-[#181822] text-[#E6CA75] text-xs font-bold border border-[#D4AF37]/30 flex items-center gap-1.5">
+<i class="w-3.5 h-3.5" data-lucide="mail"></i>
+<span><span class="phw"><span class="ph">每月中旬出刊</span> <span class="ph">｜ 免費訂閱</span></span></span>
+</span>
+<span class="text-[11px] text-zinc-500 font-mono"><span class="phw"><span class="ph">OWNED MEDIA</span></span></span>
+</div>
+<h3 class="text-2xl font-serif font-black text-white"><span class="phw">
+              <span class="ph">【每月幕僚觀察電子報】</span></span><br/>
+<span class="gold-gradient-text text-lg"><span class="phw"><span class="ph">加碼贈</span><span class="ph">《職涯資產健檢 AI 提詞指令》</span></span></span>
+</h3>
+<!-- 適合對象 -->
+<div class="p-3.5 rounded-xl bg-[#171720] border border-zinc-800 space-y-1">
+<span class="text-[11px] font-bold text-[#E6CA75] font-mono tracking-wider"><span class="phw"><span class="ph">🎯 適合對象</span></span></span>
+<p class="text-xs text-zinc-300"><span class="phw"><span class="ph">渴望站在</span><span class="ph">「老闆視角與經營者格局」思考的主管、</span><span class="ph">核心專案負責人、</span><span class="ph">企劃幕僚。</span></span></p>
+</div>
+<!-- 專屬 BENEFIT -->
+<div class="p-3.5 rounded-xl bg-[#171720] border border-zinc-800 space-y-1">
+<span class="text-[11px] font-bold text-[#E6CA75] font-mono tracking-wider">💎 專屬 BENEFIT</span>
+<p class="text-xs text-zinc-300"><span class="phw">
+                每月分享20 年大型集團經營層第一線資源配置觀念；免費獲得獨家 AI 提詞指令，輔助盤點<span class="ph">個人籌碼。</span>
+              </span></p>
+</div>
+</div>
+<div class="pt-2">
+<a class="w-full py-3.5 rounded-xl btn-gold font-black text-sm text-center flex items-center justify-center gap-2 shadow-md transition transform hover:scale-[1.02]" href="https://the-socialite-academy.kit.com/7b8ae564bd" rel="noopener noreferrer" target="_blank">
+<i class="w-4 h-4" data-lucide="sparkles"></i>
+<span>免費訂閱 ＆ 領取 AI 健檢指令</span>
+</a>
+</div>
+</div>
+<!-- 資源 B：Skool 讀書會 (高門檻共學圈) -->
+<div class="rounded-2xl p-7 bg-gradient-to-b from-[#181822] via-[#13131A] to-[#0E0E12] border-2 border-[#D4AF37] flex flex-col justify-between space-y-6 shadow-2xl relative group" id="skool">
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<span class="px-3 py-1 rounded-full bg-amber-400/20 text-[#E6CA75] text-xs font-black border border-[#D4AF37]/50 flex items-center gap-1.5">
+<i class="w-3.5 h-3.5" data-lucide="lock"></i>
+<span><span class="phw"><span class="ph">限購書讀者與電子報訂閱者</span></span></span>
+</span>
+<span class="text-[11px] text-zinc-400 font-mono"><span class="phw"><span class="ph">VIP COMMUNITY</span></span></span>
+</div>
+<h3 class="text-2xl font-serif font-black text-white"><span class="phw">
+              <span class="ph">【職涯複利讀書會】</span></span><br/>
+<span class="gold-gradient-text text-lg"><span class="phw"><span class="ph">資產升級共學圈</span></span></span>
+</h3>
+<!-- 適合對象 -->
+<div class="p-3.5 rounded-xl bg-[#171720] border border-zinc-800 space-y-1">
+<span class="text-[11px] font-bold text-[#E6CA75] font-mono tracking-wider"><span class="phw"><span class="ph">🎯 適合對象</span></span></span>
+<p class="text-xs text-zinc-300"><span class="phw">
+                持有《把資歷變資產》新書讀者（需附購書憑證）與電子<span class="ph">報訂閱者。</span>
+              </span></p>
+</div>
+<!-- 專屬 BENEFIT -->
+<div class="p-3.5 rounded-xl bg-[#171720] border border-zinc-800 space-y-1">
+<span class="text-[11px] font-bold text-[#E6CA75] font-mono tracking-wider">💎 專屬 BENEFIT</span>
+<p class="text-xs text-zinc-300"><span class="phw">
+                全書 7 大職涯資產練習線上深度拆解；過濾雜訊的高品質高階幕僚人脈圈；享有"限額"線上交流與跨界合作<span class="ph">孵化資格。</span>
+              </span></p>
+</div>
+</div>
+<div class="pt-2">
+<a class="w-full py-3.5 rounded-xl btn-gold font-black text-sm text-center flex items-center justify-center gap-2 shadow-md transition transform hover:scale-[1.02]" href="https://www.skool.com/the-socialite-academy-6806/about" rel="noopener noreferrer" target="_blank">
+<i class="w-4 h-4" data-lucide="shield-check"></i>
+<span><span class="phw"><span class="ph">填寫通關審核題</span> <span class="ph">｜ 申請加入共學圈</span></span></span>
+</a>
+</div>
+</div>
+<!-- 資源 C：YouTube 官方頻道 -->
+<div class="rounded-2xl p-7 bg-[#121217] border border-[#D4AF37]/35 hover:border-[#D4AF37]/80 transition flex flex-col justify-between space-y-6 shadow-xl relative group">
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<span class="px-3 py-1 rounded-full bg-[#181822] text-[#E6CA75] text-xs font-bold border border-[#D4AF37]/30 flex items-center gap-1.5">
+<i class="w-3.5 h-3.5 text-rose-400" data-lucide="video"></i>
+<span><span class="phw"><span class="ph">影音解說</span> <span class="ph">｜ 隨選隨學</span></span></span>
+</span>
+<span class="text-[11px] text-zinc-500 font-mono"><span class="phw"><span class="ph">YOUTUBE</span></span></span>
+</div>
+<h3 class="text-2xl font-serif font-black text-white"><span class="phw">
+              【Ginger Lin 官方影音頻道】</span><br/>
+<span class="gold-gradient-text text-lg"><span class="phw"><span class="ph">動態視覺 × 實戰分享</span></span></span>
+</h3>
+<!-- 適合對象 -->
+<div class="p-3.5 rounded-xl bg-[#171720] border border-zinc-800 space-y-1">
+<span class="text-[11px] font-bold text-[#E6CA75] font-mono tracking-wider"><span class="phw"><span class="ph">🎯 適合對象</span></span></span>
+<p class="text-xs text-zinc-300"><span class="phw"><span class="ph">習慣視覺化學習、</span><span class="ph">希望利用零碎時間，</span><span class="ph">快速吸收商業決策概念的現代工作者。</span></span></p>
+</div>
+<!-- 專屬 BENEFIT -->
+<div class="p-3.5 rounded-xl bg-[#171720] border border-zinc-800 space-y-1">
+<span class="text-[11px] font-bold text-[#E6CA75] font-mono tracking-wider">💎 專屬 BENEFIT</span>
+<p class="text-xs text-zinc-300"><span class="phw">
+                看見訪談來賓真實神態與互動火花；搭配視覺圖解與重點字卡，提升結構化吸收效率；可不限時間重複觀看與<span class="ph">團隊研討。</span>
+              </span></p>
+</div>
+</div>
+<div class="pt-2">
+<a class="w-full py-3.5 px-4 rounded-xl bg-[#181822] hover:bg-[#222230] border border-[#D4AF37]/40 hover:border-[#D4AF37] text-white font-bold text-sm flex items-center justify-center gap-2 transition" href="https://www.youtube.com/@gingerlin8568" rel="noopener noreferrer" target="_blank">
+<i class="w-4 h-4 text-[#E6CA75]" data-lucide="play-circle"></i>
+<span>前往 YouTube 訂閱精華頻道</span>
+</a>
+</div>
+</div>
+<!-- 資源 D：Podcast 隨選播客 -->
+<div class="rounded-2xl p-7 bg-[#121217] border border-[#D4AF37]/35 hover:border-[#D4AF37]/80 transition flex flex-col justify-between space-y-6 shadow-xl relative group">
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<span class="px-3 py-1 rounded-full bg-[#181822] text-[#E6CA75] text-xs font-bold border border-[#D4AF37]/30 flex items-center gap-1.5">
+<i class="w-3.5 h-3.5 text-amber-400" data-lucide="mic"></i>
+<span><span class="phw"><span class="ph">聲音陪伴</span> <span class="ph">｜ 通勤首選</span></span></span>
+</span>
+<span class="text-[11px] text-zinc-500 font-mono"><span class="phw"><span class="ph">PODCAST</span></span></span>
+</div>
+<h3 class="text-2xl font-serif font-black text-white"><span class="phw">
+              <span class="ph">【職感聊天室 隨身播客】</span></span><br/>
+<span class="gold-gradient-text text-lg"><span class="phw"><span class="ph">經營洞察 × 深度聚焦</span></span></span>
+</h3>
+<!-- 適合對象 -->
+<div class="p-3.5 rounded-xl bg-[#171720] border border-zinc-800 space-y-1">
+<span class="text-[11px] font-bold text-[#E6CA75] font-mono tracking-wider"><span class="phw"><span class="ph">🎯 適合對象</span></span></span>
+<p class="text-xs text-zinc-300"><span class="phw"><span class="ph">通勤族、</span><span class="ph">開車族、</span><span class="ph">運動中熱愛聽音訊的菁英與工作者。</span></span></p>
+</div>
+<!-- 專屬 BENEFIT -->
+<div class="p-3.5 rounded-xl bg-[#171720] border border-zinc-800 space-y-1">
+<span class="text-[11px] font-bold text-[#E6CA75] font-mono tracking-wider">💎 專屬 BENEFIT</span>
+<p class="text-xs text-zinc-300"><span class="phw">
+                解放雙手與雙眼，通勤、開車、運動中無負擔隨行聆聽；沉浸式聲音陪伴，深度聚焦經營思維對話，把零碎工時轉化為<span class="ph">成長複利。</span>
+              </span></p>
+</div>
+</div>
+<div class="pt-2">
+<a class="w-full py-3.5 px-4 rounded-xl bg-[#181822] hover:bg-[#222230] border border-[#D4AF37]/40 hover:border-[#D4AF37] text-white font-bold text-sm flex items-center justify-center gap-2 transition" href="https://open.spotify.com/show/7EKQQERlSVzEewlJ3zWlLt" rel="noopener noreferrer" target="_blank">
+<i class="w-4 h-4 text-[#E6CA75]" data-lucide="headphones"></i>
+<span><span class="phw"><span class="ph">Spotify 免費收聽</span></span></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 模組 6：特別設立【資產升級綠色通道】(後端兩大旗艦) -->
+<section class="py-16 sm:py-24 px-4 sm:px-8 bg-gradient-to-b from-[#0B0B0E] to-[#040405] border-t border-[#22222B] relative" id="business">
+<div class="max-w-5xl mx-auto space-y-12">
+<div class="text-center space-y-3">
+<span class="text-xs uppercase font-mono tracking-widest text-[#E6CA75] font-bold">EXECUTIVE FAST TRACK</span>
+<h2 class="text-3xl sm:text-4xl font-serif font-black text-white"><span class="phw">
+          <span class="ph">特別設立 ｜</span> </span><span class="gold-gradient-text"><span class="phw"><span class="ph">資產升級綠色通道</span></span></span>
+</h2>
+<p class="text-zinc-400 text-sm sm:text-base max-w-2xl mx-auto"><span class="phw">
+          若您正在尋找企業級人財 AI 升級解方，或正計畫開拓具備全球複利效應的事業資產，歡迎透過專屬<span class="ph">通道對接。</span>
+        </span></p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+<!-- 通道 1: 企業專屬介紹與體驗 -->
+<div class="rounded-3xl p-8 bg-[#131318] border-2 border-zinc-800 hover:border-[#D4AF37]/70 transition flex flex-col justify-between shadow-2xl relative group">
+<div class="space-y-5">
+<!-- 頂部身分標籤 -->
+<div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#181822] text-[#E6CA75] text-xs font-bold border border-[#D4AF37]/30">
+<i class="w-3.5 h-3.5" data-lucide="building-2"></i>
+<span><span class="phw"><span class="ph">限 50 人以上企業主</span> <span class="ph">｜ CEO</span> <span class="ph">｜ HRD</span> <span class="ph">｜ 業務團隊領導</span></span></span>
+</div>
+<!-- 標題與定位 -->
+<div>
+<h3 class="text-2xl font-serif font-black text-white"><span class="phw"><span class="ph">打造持續創造價值的</span><span class="ph">「資產型團隊」</span></span></h3>
+<p class="text-xs text-[#E6CA75] mt-1 font-semibold"><span class="phw">組織人財養成 X AI降<span class="ph">低管理風險</span></span></p>
+</div>
+<!-- 扎心 3 大痛點框（引起強烈共鳴） -->
+<div class="p-3.5 rounded-xl bg-[#0D0D12] border border-rose-500/25 space-y-2 text-xs">
+<div class="flex items-center gap-2 text-rose-300 font-medium">
+<span class="text-rose-400 font-bold text-sm leading-none">✕</span><span class="phw"> <span class="ph">面試很滿意，</span><span class="ph">進來卻不適任？</span>
+              </span></div>
+<div class="flex items-center gap-2 text-rose-300 font-medium">
+<span class="text-rose-400 font-bold text-sm leading-none">✕</span><span class="phw"> <span class="ph">業務第一名，</span><span class="ph">升主管後，</span><span class="ph">團隊業績反而掉？</span>
+              </span></div>
+<div class="flex items-center gap-2 text-rose-300 font-medium">
+<span class="text-rose-400 font-bold text-sm leading-none">✕</span><span class="phw"> <span class="ph">訓練課程結束之後，</span><span class="ph">什麼都沒變？</span>
+              </span></div>
+</div>
+<!-- Ginger 解方與千萬數據優勢 -->
+<p class="text-xs sm:text-sm text-zinc-300 leading-relaxed">
+              Ginger 具備 <strong>20 年大型集團經營層幕僚經驗</strong>，並與<strong>國際高單價成交大師 Dan Lok</strong> 合作，以 <strong><span class="phw"><span class="ph">40 年、</span><span class="ph">超過千萬筆數據資料庫</span></span></strong> 為基底：
             </p>
-
-            <!-- 2 大核心價值清單 -->
-            <ul class="space-y-2 text-xs text-zinc-200 border-t border-zinc-800 pt-3">
-              <li class="flex items-start gap-2">
-                <i data-lucide="check" class="w-4 h-4 text-[#E6CA75] shrink-0 mt-0.5"></i>
-                <span><strong>10 分鐘精準看見人與職位落差</strong>：跳脫主觀猜測，用數據說話。</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <i data-lucide="check" class="w-4 h-4 text-[#E6CA75] shrink-0 mt-0.5"></i>
-                <span><strong>人才動態管理 × AI 教練系統</strong>：具體指引「人怎麼帶、任務怎麼調」。</span>
-              </li>
-            </ul>
-          </div>
-
-          <div class="pt-6">
-            <a href="https://talent.elites888.com/" target="_blank" rel="noopener noreferrer" class="w-full py-4 rounded-xl bg-[#1A1A24] hover:bg-[#222230] border border-[#D4AF37]/50 hover:border-[#D4AF37] text-white font-bold text-sm text-center flex items-center justify-center gap-2 shadow-md transition transform hover:scale-[1.02]">
-              <i data-lucide="external-link" class="w-4 h-4 text-[#E6CA75]"></i>
-              <span>申請 企業專屬介紹與免費體驗</span>
-            </a>
-          </div>
-        </div>
-
-        <!-- 通道 2: 菁英夥伴共創計畫 -->
-        <div class="rounded-3xl p-8 bg-gradient-to-b from-[#1C1C24] via-[#14141A] to-[#0E0E12] border-2 border-[#D4AF37] shadow-[0_0_40px_rgba(212,175,55,0.2)] flex flex-col justify-between relative group transform md:-translate-y-2">
-          
-          <div class="absolute -top-3.5 right-6 px-4 py-1 rounded-full btn-gold text-zinc-950 text-xs font-black tracking-wider uppercase shadow-md">
+<!-- 2 大核心價值清單 -->
+<ul class="space-y-2 text-xs text-zinc-200 border-t border-zinc-800 pt-3">
+<li class="flex items-start gap-2">
+<i class="w-4 h-4 text-[#E6CA75] shrink-0 mt-0.5" data-lucide="check"></i>
+<span><strong>10 分鐘精準看見人與職位落差</strong><span class="phw">：<span class="ph">跳脫主觀猜測，</span><span class="ph">用數據說話。</span></span></span>
+</li>
+<li class="flex items-start gap-2">
+<i class="w-4 h-4 text-[#E6CA75] shrink-0 mt-0.5" data-lucide="check"></i>
+<span><strong>人才動態管理 × AI 教練系統</strong><span class="phw">：<span class="ph">具體指引</span><span class="ph">「人怎麼帶、任務怎麼調」。</span></span></span>
+</li>
+</ul>
+</div>
+<div class="pt-6">
+<a class="w-full py-4 rounded-xl bg-[#1A1A24] hover:bg-[#222230] border border-[#D4AF37]/50 hover:border-[#D4AF37] text-white font-bold text-sm text-center flex items-center justify-center gap-2 shadow-md transition transform hover:scale-[1.02]" href="https://talent.elites888.com/" rel="noopener noreferrer" target="_blank">
+<i class="w-4 h-4 text-[#E6CA75]" data-lucide="external-link"></i>
+<span><span class="phw"><span class="ph">申請 企業專屬介紹與免費體驗</span></span></span>
+</a>
+</div>
+</div>
+<!-- 通道 2: 菁英夥伴共創計畫 -->
+<div class="rounded-3xl p-8 bg-gradient-to-b from-[#1C1C24] via-[#14141A] to-[#0E0E12] border-2 border-[#D4AF37] shadow-[0_0_40px_rgba(212,175,55,0.2)] flex flex-col justify-between relative group transform md:-translate-y-2">
+<div class="absolute -top-3.5 right-6 px-4 py-1 rounded-full btn-gold text-zinc-950 text-xs font-black tracking-wider uppercase shadow-md">
             PARTNERSHIP 限額邀請
           </div>
-
-          <div class="space-y-5">
-            <!-- 頂部身分標籤 -->
-            <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#D4AF37]/15 text-[#E6CA75] text-xs font-bold border border-[#D4AF37]/30">
-              <i data-lucide="compass" class="w-3.5 h-3.5"></i>
-              <span>限 思考轉型的職場工作者 ｜ 擬拓展全球市場的創業者 ｜ 專業菁英</span>
-            </div>
-
-            <!-- 標題與定位 -->
-            <div>
-              <h3 class="text-2xl font-serif font-black text-white">開拓具備全球複利的「第二資產曲線」</h3>
-              <p class="text-xs text-[#E6CA75] mt-1 font-semibold">生理資產剛需 X 全球市場版圖</p>
-            </div>
-
-            <!-- 扎心 3 大痛點框（引起強烈共鳴） -->
-            <div class="p-3.5 rounded-xl bg-[#0D0D12] border border-amber-500/25 space-y-2 text-xs">
-              <div class="flex items-center gap-2 text-amber-200/90 font-medium">
-                <span class="text-amber-400 font-bold text-sm leading-none">✕</span> 年薪看似優渥，但一停下工作收入就歸零？
-              </div>
-              <div class="flex items-center gap-2 text-amber-200/90 font-medium">
-                <span class="text-amber-400 font-bold text-sm leading-none">✕</span> 渴望開拓副業，卻又陷入出賣時間的兼職迴圈？
-              </div>
-              <div class="flex items-center gap-2 text-amber-200/90 font-medium">
-                <span class="text-amber-400 font-bold text-sm leading-none">✕</span> 想打造第二穩定的現金流，卻缺乏成熟系統與教練？
-              </div>
-            </div>
-
-            <!-- Ginger 解方與全球品牌優勢 -->
-            <p class="text-xs sm:text-sm text-zinc-300 leading-relaxed">
-              Ginger 運用 <strong>20 年經營幕僚商業戰略</strong>，攜手<strong>全球健康科技品牌</strong>，協助您跳脫單一工時限制，同步累積本業的職涯資產：
-            </p>
-
-            <!-- 2 大核心價值清單 -->
-            <ul class="space-y-2 text-xs text-zinc-200 border-t border-zinc-800 pt-3">
-              <li class="flex items-start gap-2">
-                <i data-lucide="check" class="w-4 h-4 text-[#E6CA75] shrink-0 mt-0.5"></i>
-                <span><strong>跨國賽道與成熟商業系統</strong>：打造不受地點限制的抗跌資產。</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <i data-lucide="check" class="w-4 h-4 text-[#E6CA75] shrink-0 mt-0.5"></i>
-                <span><strong>Ginger 親自 1 對 1 商業戰略指導</strong>：跳脫摸索，直通全球複利版圖。</span>
-              </li>
-            </ul>
-          </div>
-
-          <div class="pt-6">
-            <a href="https://calendly.com/urcareer101/clone-1" target="_blank" rel="noopener noreferrer" class="w-full py-4 rounded-xl btn-gold font-black text-sm text-center flex items-center justify-center gap-2 shadow-[0_0_30px_rgba(212,175,55,0.35)] transition transform hover:scale-[1.02]">
-              <i data-lucide="calendar" class="w-4 h-4"></i>
-              <span>預約與 Ginger 合作面談</span>
-            </a>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- 頁尾 Footer -->
-  <footer class="py-12 px-4 sm:px-8 bg-[#040405] border-t border-zinc-900 text-center text-xs text-zinc-500 space-y-4">
-    <div class="flex items-center justify-center gap-2">
-      <img src="logo.png" alt="職感菁英學院" class="h-6 w-6 object-contain">
-      <span class="font-serif font-black gold-gradient-text text-sm tracking-wider">職感菁英學院 THE ELITE ACADEMY</span>
-    </div>
-    <div class="pt-1 flex items-center justify-center gap-2 text-xs">
-      <span class="text-zinc-400">官方 LINE@ 帳號：</span>
-      <a href="https://line.me/R/ti/p/@513hkzao" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#181820] border border-[#D4AF37]/40 text-[#E6CA75] hover:text-white hover:border-[#D4AF37] font-mono font-bold transition">
-        <span>@513hkzao</span>
-        <i data-lucide="external-link" class="w-3 h-3 text-[#E6CA75]"></i>
-      </a>
-    </div>
-    <p class="pt-2">© 2026 Ginger 林逸蓁. All rights reserved.</p>
-  </footer>
-
-  <!-- 成本計算機即時運算邏輯腳本 -->
-  <script>
+<div class="space-y-5">
+<!-- 頂部身分標籤 -->
+<div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#D4AF37]/15 text-[#E6CA75] text-xs font-bold border border-[#D4AF37]/30">
+<i class="w-3.5 h-3.5" data-lucide="compass"></i>
+<span><span class="phw"><span class="ph">限 思考轉型的職場工作者</span> <span class="ph">｜ 擬拓展全球市場的創業者</span> <span class="ph">｜ 專業菁英</span></span></span>
+</div>
+<!-- 標題與定位 -->
+<div>
+<h3 class="text-2xl font-serif font-black text-white"><span class="phw"><span class="ph">開拓具備全球複利的</span><span class="ph">「第二資產曲線」</span></span></h3>
+<p class="text-xs text-[#E6CA75] mt-1 font-semibold"><span class="phw">生理資產剛需 X 全<span class="ph">球市場版圖</span></span></p>
+</div>
+<!-- 扎心 3 大痛點框（引起強烈共鳴） -->
+<div class="p-3.5 rounded-xl bg-[#0D0D12] border border-amber-500/25 space-y-2 text-xs">
+<div class="flex items-center gap-2 text-amber-200/90 font-medium">
+<span class="text-amber-400 font-bold text-sm leading-none">✕</span><span class="phw"> <span class="ph">年薪看似優渥，</span><span class="ph">但一停下工作收入就歸零？</span>
+              </span></div>
+<div class="flex items-center gap-2 text-amber-200/90 font-medium">
+<span class="text-amber-400 font-bold text-sm leading-none">✕</span><span class="phw"> <span class="ph">渴望開拓副業，</span><span class="ph">卻又陷入出賣時間的兼職迴圈？</span>
+              </span></div>
+<div class="flex items-center gap-2 text-amber-200/90 font-medium">
+<span class="text-amber-400 font-bold text-sm leading-none">✕</span><span class="phw"> <span class="ph">想打造第二穩定的現金流，</span><span class="ph">卻缺乏成熟系統與教練？</span>
+              </span></div>
+</div>
+<!-- Ginger 解方與全球品牌優勢 -->
+<p class="text-xs sm:text-sm text-zinc-300 leading-relaxed">
+              Ginger 運用 <strong>20 年經營幕僚商業戰略</strong>，攜手<strong>全球健康科技品牌</strong><span class="phw">，協助您跳脫單一工時限制，同步累積本業的<span class="ph">職涯資產：</span>
+            </span></p>
+<!-- 2 大核心價值清單 -->
+<ul class="space-y-2 text-xs text-zinc-200 border-t border-zinc-800 pt-3">
+<li class="flex items-start gap-2">
+<i class="w-4 h-4 text-[#E6CA75] shrink-0 mt-0.5" data-lucide="check"></i>
+<span><strong><span class="phw"><span class="ph">跨國賽道與成熟商業系統</span></span></strong><span class="phw">：打造不受地點限制的<span class="ph">抗跌資產。</span></span></span>
+</li>
+<li class="flex items-start gap-2">
+<i class="w-4 h-4 text-[#E6CA75] shrink-0 mt-0.5" data-lucide="check"></i>
+<span><strong>Ginger 親自 1 對 1 商業戰略指導</strong><span class="phw">：<span class="ph">跳脫摸索，</span><span class="ph">直通全球複利版圖。</span></span></span>
+</li>
+</ul>
+</div>
+<div class="pt-6">
+<a class="w-full py-4 rounded-xl btn-gold font-black text-sm text-center flex items-center justify-center gap-2 shadow-[0_0_30px_rgba(212,175,55,0.35)] transition transform hover:scale-[1.02]" href="https://calendly.com/urcareer101/clone-1" rel="noopener noreferrer" target="_blank">
+<i class="w-4 h-4" data-lucide="calendar"></i>
+<span>預約與 Ginger 合作面談</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 頁尾 Footer -->
+<footer class="py-12 px-4 sm:px-8 bg-[#040405] border-t border-zinc-900 text-center text-xs text-zinc-500 space-y-4">
+<div class="flex items-center justify-center gap-2">
+<img alt="職感菁英學院" class="h-6 w-6 object-contain" src="logo.png"/>
+<span class="font-serif font-black gold-gradient-text text-sm tracking-wider">職感菁英學院 THE ELITE ACADEMY</span>
+</div>
+<div class="pt-1 flex items-center justify-center gap-2 text-xs">
+<span class="text-zinc-400"><span class="phw"><span class="ph">官方 LINE@ 帳號：</span></span></span>
+<a class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#181820] border border-[#D4AF37]/40 text-[#E6CA75] hover:text-white hover:border-[#D4AF37] font-mono font-bold transition" href="https://line.me/R/ti/p/@513hkzao" rel="noopener noreferrer" target="_blank">
+<span><span class="phw"><span class="ph">@513hkzao</span></span></span>
+<i class="w-3 h-3 text-[#E6CA75]" data-lucide="external-link"></i>
+</a>
+</div>
+<p class="pt-2"><span class="phw">© 2026 Ginger 林逸蓁. All rights <span class="ph">reserved.</span></span></p>
+</footer>
+<!-- 成本計算機即時運算邏輯腳本 -->
+<script>
     try { lucide.createIcons(); } catch (e) {}
 
     const inputSalary = document.getElementById('input-salary');
