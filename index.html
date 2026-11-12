@@ -284,7 +284,7 @@ p,li,td,th,figcaption,label,dd{text-wrap:pretty}
 <div class="flex items-center justify-between">
 <span class="px-3 py-1 rounded-full bg-amber-400/20 text-[#E6CA75] text-xs font-black border border-[#D4AF37]/50 flex items-center gap-1.5">
 <i class="w-3.5 h-3.5" data-lucide="lock"></i>
-<span><span class="phw"><span class="ph">限購書讀者與隨筆訂閱者</span></span></span>
+<span><span class="phw"><span class="ph">工作坊完課讀者限定</span></span></span>
 </span>
 <span class="text-[11px] text-zinc-400 font-mono"><span class="phw"><span class="ph">VIP COMMUNITY</span></span></span>
 </div>
@@ -296,21 +296,21 @@ p,li,td,th,figcaption,label,dd{text-wrap:pretty}
 <div class="p-3.5 rounded-xl bg-[#171720] border border-zinc-800 space-y-1">
 <span class="text-[11px] font-bold text-[#E6CA75] font-mono tracking-wider"><span class="phw"><span class="ph">🎯 適合對象</span></span></span>
 <p class="text-xs text-zinc-300"><span class="phw">
-                持有《把資歷變資產》新書讀者（需附購書憑證）與<span class="ph">隨筆訂閱者。</span>
+                以新書讀者身分完成一日工作坊的學員，<span class="ph">完課後取得入群面談資格，</span><span class="ph">通過面談即可加入。</span>
               </span></p>
 </div>
 <!-- 專屬 BENEFIT -->
 <div class="p-3.5 rounded-xl bg-[#171720] border border-zinc-800 space-y-1">
 <span class="text-[11px] font-bold text-[#E6CA75] font-mono tracking-wider">💎 專屬 BENEFIT</span>
 <p class="text-xs text-zinc-300"><span class="phw">
-                全書 7 大職涯資產練習線上深度拆解；過濾雜訊的高品質高階幕僚人脈圈；享有"限額"線上交流與跨界合作<span class="ph">孵化資格。</span>
+                與同路夥伴交流，學習建立關係；在安全的環境中練習分享與發表；90 天內資源不限次數觀看；<span class="ph">優先受邀參與進階計畫與合作。</span>
               </span></p>
 </div>
 </div>
 <div class="pt-2">
-<a class="w-full py-3.5 rounded-xl btn-gold font-black text-sm text-center flex items-center justify-center gap-2 shadow-md transition transform hover:scale-[1.02]" href="https://www.skool.com/the-socialite-academy-6806/about" rel="noopener noreferrer" target="_blank">
-<i class="w-4 h-4" data-lucide="shield-check"></i>
-<span><span class="phw"><span class="ph">填寫通關審核題</span> <span class="ph">｜ 申請加入共學群</span></span></span>
+<a class="w-full py-3.5 rounded-xl btn-gold font-black text-sm text-center flex items-center justify-center gap-2 shadow-md transition transform hover:scale-[1.02]" href="https://workshop.elites888.com/">
+<i class="w-4 h-4" data-lucide="calendar-check"></i>
+<span><span class="phw"><span class="ph">從一日工作坊開始</span> <span class="ph">｜ 了解入群資格</span></span></span>
 </a>
 </div>
 </div>
@@ -407,7 +407,8 @@ p,li,td,th,figcaption,label,dd{text-wrap:pretty}
       var salary = document.getElementById('salary'), idealR = document.getElementById('ideal'), idealN = document.getElementById('idealN');
       var lossWrap = document.getElementById('lossWrap');
       var unit = 'month', months = 12, never = false, idealTouched = false;
-      function seg(t) { return '<span class="inline-block whitespace-nowrap mr-1">' + t + '</span>'; }
+      function segN(t) { return '<span class="inline-block whitespace-nowrap">' + t + '</span>'; }
+    function seg(t) { return '<span class="inline-block whitespace-nowrap mr-1">' + t + '</span>'; }
       function span(m) { return m % 12 === 0 ? (m / 12) + ' 年' : m + ' 個月'; }
       function fitLoss() {
         var size = window.innerWidth >= 1024 ? 60 : window.innerWidth >= 640 ? 52 : 44;
@@ -442,11 +443,11 @@ p,li,td,th,figcaption,label,dd{text-wrap:pretty}
         var label = document.getElementById('lossLabel'), note = document.getElementById('lossNote'), formula = document.getElementById('formula');
         if (months === 0) {
           label.textContent = '現在開始，你不必付出這筆代價';
-          note.innerHTML = seg('最划算的開始時間，') + seg('永遠是現在。');
+          note.innerHTML = segN('最划算的開始時間，') + segN('永遠是現在。');
           formula.innerHTML = seg('每多等 1 年，') + seg('就少賺 NT$ ' + fmt(gap * HOURS_YEAR));
         } else {
           label.textContent = never ? '如果 3 年都沒開始，你會少賺' : (months === 6 ? '晚半年開始，你會少賺' : '晚 ' + span(months) + '開始，你會少賺');
-          note.innerHTML = seg('這筆錢不會出現在你的存摺上，') + '<br>' + seg('卻一點一點拉開') + seg('你和理想生活的距離。');
+          note.innerHTML = segN('這筆錢不會出現在你的存摺上，') + '<br>' + segN('卻一點一點拉開') + segN('你和理想生活的距離。');
           formula.innerHTML = seg('公式：時薪差 ' + fmt(gap)) + seg('× 每月約 166.7 工時') + seg('＝ 每月少賺 NT$ ' + fmt(gap * HOURS_MONTH) + '，') + seg('再 × ' + months + ' 個月');
         }
         fitLoss();
